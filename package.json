@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^7.1.0",
+    "git-filter-repo": "^0.0.30",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.7.1",
+    "sass": "^1.79.4",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "gulp-babel": "^8.0.0",
+    "gulp-webp": "^5.0.0",
+    "imagemin": "^9.0.0",
+    "imagemin-jpegtran": "^8.0.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "build": "gulp build --production",
+    "start": "gulp"
+  }
+}

@@ -1,0 +1,427 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+  .hero {
+    background-position: 80%;
+    &__title {
+      font-size: 45px;
+    }
+  }
+  .gifts {
+    &-item__title {
+      font-size: 28px;
+      line-height: 40px;
+      max-width: 600px;
+    }
+    &__img {
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-position: 120%;
+    &__title {
+      font-size: 40px;
+    }
+  }
+  .info {
+    &__img {
+      max-width: 60%;
+    }
+  }
+  .benefits {
+    &__inner {
+      background-position-x: 120%;
+    }
+  }
+  .gifts {
+    &-item__title {
+      font-size: 26px;
+      line-height: 40px;
+      max-width: 600px;
+    }
+    &__img {
+      max-width: 40%;
+    }
+  }
+  .enjoy {
+    &__title {
+      font-size: 46px;
+      line-height: 50px;
+    }
+  }
+  .footer {
+    &__inner {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .benefits {
+    &__inner {
+      background-image: none;
+    }
+  }
+  .gifts {
+    &-item__title {
+      font-size: 36px;
+      line-height: 40px;
+      max-width: 600px;
+    }
+    &__img {
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position-x: -700%;
+    &__title {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 25px;
+    }
+  }
+  .header__inner {
+    align-items: baseline;
+  }
+  .header__inner.header__inner--active .menu__list {
+    transform: translateY(0%);
+  }
+  .header__inner--active .logo {
+    z-index: 5;
+    path {
+      fill: #fff;
+    }
+  }
+  .menu__list {
+    transform: translateY(-200%);
+    transition: all 0.5s;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+    text-align: center;
+  }
+  .menu {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    &__list-item + .menu__list-item {
+      margin-left: 0;
+    }
+    ul.menu__list {
+      padding: 90px 0 15px;
+    }
+    &__list-link {
+      color: #fff;
+      display: block;
+      margin: 0 0 20px 0;
+      padding: 10px 0;
+    }
+    &__btn {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-right: 60px;
+      position: relative;
+      z-index: 2;
+    }
+    &__list-link-download {
+      padding: 16px 28px;
+      color: #fff;
+      background-color: $dark;
+      border: 1px solid $dark;
+      border-radius: 8px;
+      transition: 0.5s all ease;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $accent;
+        color: $accent;
+      }
+    }
+  }
+  .feature {
+    &__inner {
+      display: block;
+      text-align: center;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &__item + .feature__item {
+      margin-top: 30px;
+    }
+  }
+  .info {
+    &__img {
+      max-width: 40%;
+      margin-right: 70px;
+    }
+    &__inner {
+      padding-bottom: 15px;
+    }
+    &-item__title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__content-item {
+      max-width: 300px;
+    }
+  }
+  .benefits {
+    &__item {
+      margin: 0 auto;
+      &:nth-child(2) {
+        left: 0;
+      }
+    }
+  }
+  .gifts {
+    &__img {
+      max-width: 30%;
+    }
+    &__content {
+      padding-top: 15px;
+    }
+    &-item__title {
+      font-size: 24px;
+    }
+  }
+  .enjoy {
+    &__title {
+      font-size: 40px;
+      line-height: 44px;
+      max-width: 470px;
+    }
+    &__form-input {
+      width: 360px;
+      margin-right: 10px;
+    }
+    &__form-btn {
+      padding: 16px 30px;
+    }
+  }
+  .footer {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__content {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 32px;
+  }
+  .hero {
+    &__title {
+      font-size: 32px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    &__link {
+      margin: 0 auto;
+      font-size: 14px;
+      width: 185px;
+      height: 50px;
+      gap: 12px;
+      text-align: center;
+    }
+  }
+  .feature {
+    &__item-title {
+      font-size: 22px;
+    }
+    &__item-text {
+      font-size: 14px;
+    }
+  }
+  .info {
+    &__img {
+      display: none;
+    }
+    &__inner {
+      padding-bottom: 15px;
+      padding-left: 120px;
+    }
+  }
+  .benefits {
+    &__item {
+      width: 400px;
+      height: 180px;
+      padding: 20px 50px 30px 25px;
+    }
+  }
+  .gifts {
+    &__img {
+      display: none;
+    }
+    &-item__title {
+      max-width: 300px;
+      font-size: 22px;
+    }
+    &-item__text {
+      font-size: 13px;
+      max-width: 450px;
+    }
+    &__content-item {
+      margin: 0 auto;
+    }
+    &__inner {
+      padding-left: 0;
+    }
+    &__content {
+      padding-right: 100px;
+    }
+  }
+  .enjoy {
+    &__title {
+      font-size: 30px;
+      line-height: 32px;
+      max-width: 470px;
+    }
+    &__form-input {
+      width: 250px;
+      margin-right: 10px;
+    }
+    &__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px 0 0;
+    }
+    &__link {
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+    &__form-input {
+      width: 200px;
+      margin: 0 10px 0 0;
+      margin-right: 10px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    &__form-btn {
+      padding: 16px 20px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 28px;
+  }
+  .hero {
+    &__title {
+      font-size: 26px;
+      margin-bottom: 60px;
+    }
+    &__link {
+      font-size: 12px;
+      width: 150px;
+      height: 40px;
+      gap: 10px;
+      padding: 15px 18px 15px 15px;
+    }
+  }
+  .info {
+    &-item__text {
+      font-size: 10px;
+    }
+    &-item__title {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  }
+  .gifts {
+    &-item__subtitle {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    &-item__title {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+      max-width: 130px;
+    }
+    &-item__text {
+      font-size: 10px;
+    }
+    &__content {
+      padding-left: 50px;
+      padding-right: 0;
+    }
+    &__content-item {
+      margin: 0 auto;
+    }
+    &__inner {
+      margin: 0 auto;
+      padding-bottom: 10px;
+      padding-right: 50px;
+    }
+  }
+  .benefits {
+    &__item {
+      width: 350px;
+      height: 180px;
+      padding: 15px 25px 25px 20px;
+      font-size: 14px;
+    }
+  }
+  .enjoy {
+    &__title {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 380px;
+    }
+    &__form-btn {
+      padding: 16px 20px;
+      font-size: 14px;
+    }
+    &__link {
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .benefits {
+    &__item {
+      width: 300px;
+      height: 210px;
+      padding: 15px 25px 10px 20px;
+      font-size: 12px;
+    }
+  }
+  .enjoy__form-input {
+    padding-block: 6px;
+  }
+  .enjoy__form-btn {
+    padding: 14px 15px;
+    font-size: 10px;
+  }
+}
